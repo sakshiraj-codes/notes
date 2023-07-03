@@ -1,0 +1,88 @@
+CSS Cascaded Style Sheet
+
+allows us to specify how to present (render) the document info stored in the background.
+
+Features :
+1. Colors
+2. Margins
+3. Position
+4. Sizes
+5. Behaviour
+
+
+(*) - A valid CSS selector means all. 
+
+CSS Fields
+
+1. color - red;  regba(255,00,100,1.0);  //different ways to specify colors
+2. background-color - red;
+3. background-image - url('file.png')
+4. font - 18px 'Tahoma';
+5. border - 2px solid black;
+6. border-top - 2px solid red;
+7. border-radius - 2px; //to remove corners and make them more round
+8. margin - 10px; //distance from the border to the outer elements
+9. padding - 2px; //distancefrom the border to the inner elements
+10. width - 100%;  300px;  1.3em;  //many different ways to specify distances
+11. height - 200px
+12. text-align - center;
+13. box-shadow - 3px 3px 5px black;
+14. cursor - pointer;
+15. display - inline-block;
+16. overflow - hidden;
+
+
+How to add it?
+
+1. inserting the code inside a style tag
+	<style>
+		p{color:blue}
+	</style>
+
+2. referencing an external CSS file
+	<link href="style.css" rel="stylesheet" />
+
+3. using the attribute style on a tag
+	<p style="color:blue; maargin:10px">
+
+
+CSS Selectors
+
+1. every tag DIV found in our website should have a red background color.
+
+	div{
+		background-color: red;
+	}
+
+2. to affect the whole website background.
+
+	body{
+		background-color: red;
+	}
+
+We can specify more precise selectors besides the name of the tag. For instance, by class or id. To specify a tag with a given calss name, we use the dot.
+
+1. .intro{
+		color: red;
+   }
+
+This will affect only the tags p with class name intro:
+
+<p class="intro>
+
+Main selectors :
+
+1. tag name : just the name of the tag
+	p{ ... } //affects to all <p> tags
+
+2. dot(.) : affects to tags with that class
+	p.highlight{ ... } //affects all <p> tags with class="highlight"
+
+3. sharp character (#) : specifies tag with that id
+	p#intro{ ... } //affects to the <p> tag with the id="intro"
+
+4. two dots(:) : behaviour states (mouse on top)
+	p:hover{ ... } //affects to <p> tags with the mouse over
+
+5. brackets([attr='value']) : tags with the attribute attr with the value 'value' //affects to the input tags of the type text
+

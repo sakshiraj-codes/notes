@@ -1,0 +1,50 @@
+HTML Hyper Text Markup Language
+
+Allows us to define the structure of a document or a website
+Not a programming language, it's a markup language, which means its purpose us to givr structure to the content of the website, not to define an algorithm.
+
+A series of nested tags (subset of XML) that contain all website information(like texts, images, and videos).
+
+The HTML defines the page structure. A website can have several HTMLs to different pages.
+
+Basic Rules :
+
+1. Uses XML (Extensible Markup Language) syntax
+2. stores all the information that must be shown to the user
+3. Different HTML elements for different types of information and behaviour
+3. The information is stored in a tree-like structure (nodes that contain nodes inside) called DOM (Docuemnt Object Model)
+4. Must not contail information related to hot it should be displayed ( that information belongs to CSS), so no color information, size, or position.
+
+DOM :
+
+DOM is a tree that is built by a browser when it reads the HTML sent to it.
+Every node can only have one parent, and every node can have several children,so the structure looks like a tree.
+
+Main tags :
+
+1. <div> - a container, usually represents a rectangular area with information inside.
+2. <img/> - an image
+3. <a> - a clickable link to go to another URL.
+4. <P> - a text paragraph
+5. <h1> - a title (h2,h3,h4 are titles of less importance)
+6. <input> - a widget to ket the user intoduce information
+7. <style> - to insert CSS rules
+8. <script> - to execute JavaScript
+9. <span> a null tag (doesn't do anything)
+
+Other interesting tags :
+
+1. <button> - to create a button
+2. <audio> - for playing audio
+3. <video> - to play video
+4. <canvas> - to draw graphic from JavaSCript
+5. <iframe> - to put another website inside ours
+
+HTML good use :
+
+It is good to have all the information wrapped in tags that give it some semantics.
+
+We also can extend the code semantics by addingextra attributes to the tags :
+
+1. id - tells a unique identifier for this tag
+2. class - tells a generic identifier for this tag

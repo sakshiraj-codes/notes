@@ -1,0 +1,42 @@
+Javascript
+
+A regular programming language, easy to start, hard to master.
+Allows to give some interactivity to the elements on the web.
+Syntax similar to C or Java but with no types.
+You can change the content of the HTML, or the CSS applied to an element.
+You can even send or retrieve information from the internet to update the content of the web without reloading the page.
+
+Inserting code :
+
+1. Embed the code in the HTML
+
+	<script> /* some code */ </script>
+
+2. Import a Javascript file using the <script> tag
+
+	<script src="file.js" />
+
+3. Inject the code on an event inside a tag
+
+	<button onclick="javascript: /*code*/">press me</button>
+
+
+Syntax :
+
+var my_number = 10; //this is a comment
+var my_string = "hello";
+var my_array = [10,20,"name,true];
+var my_object = {name:"javi", city: "Barcelona"}
+
+
+function say(str)
+{
+	for(var i=0;i<10;++1)
+		console.log("say: "+str);
+}
+
+
+jQuery
+
+A library that makes working with the DOM much easier, using an unified syntax and taking advantage of selectors.
+

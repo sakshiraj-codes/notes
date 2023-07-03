@@ -1,0 +1,105 @@
+Why Python ?
+1. Written in C - high performance, ability to link to C libraries for extensions
+2. Interpreted language compiled on the fly into bytecode
+3. Huge developer community
+4. Supports OO design paradigms
+5. Easy to read syntax
+
+Django: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+Free and open-source
+Secure
+Scalable
+Reusability
+Community
+Most Popular
+NASA
+Youtube
+Instagram
+spotify
+Dropbox
+
+Batteries included framework with a lot of features
+
+Django features
+1. The admin site
+2. ORM
+3. Authentication
+4. Caching
+5. Server Side Rendering
+6. Built-in Form Handling
+
+
+Maturity
+Stability of versions
+Community
+Difficulty
+
+
+How the web works?
+Front-end - Client
+Back-end - Server
+
+
+The browser sends a request to web server that hosts the website so the web server should take this request, process it, and return a response back to the client.
+This data exchange is defined by a protocol called HTTP (Hypertext Transfer Protocol). It defines how clients and servers can communicate.
+
+
+The user enters the uniform resource locator (URL) of the website or file and the browser sends a request to the domain name system (DNS) server.
+The DNS server looks for the address of the web server and the DNS server responds with the IP address of the web server.
+After the DNS server responds, the  browser sends over an HTTP or HTTPS request to the web server’s IP, which was provided by the DNS server.
+The server then sends over the necessary files of the website.
+Finally, the browser renders the files and the website is displayed.
+
+How to create a Django project in visual studio code, Virtual Environment?
+
+open bash
+python -m venv myVenv(name)
+source myVenv/Scripts/activate
+pip freeze
+pip install django
+pip freeze
+django-admin startproject projectname
+python manage.py runserver
+
+to restart:
+source myVenv/Scripts/activate
+python manage.py runserver
+
+Middleware :
+Anything that comes between request coming to server and response sending from it
+
+urlpatterns :
+
+defines all rules for the application
+
+
+powershell
+virtualenv nameenvironment
+name/scripts/activate
+pip install django
+django-admin startproject name
+cd name
+python manage.py startapp name
+
+
+python manage.py makemigrations/migrate
+to convert models 
+Migrations are Django's way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
+
+command to change python version in virtualenv
+py -3.7 -m venv env
+
+Key Features of Django:
+1. Model-Template-View
+	i. Object Relational Mapper
+	ii. Models
+	iii. URLs and Views
+	iv. Templates
+
+User browser is going to end up receiving what's knwon as a template, and the template itself is going to be a dot html file.How do we actually end up connecting the template to the database?  Each html, css and js aren't really going to be stored as far as things that can be manipulated by the user. insted, we are going to use jinja templating with two curly sets of brackets{{}}. Jinja allows us to insert information directly from a python file into that template.
+Python file with url routing, interactivity with views and which route they take. View information is linked to Models 'Python Representation of database'
+
+
+Client side(user browser - {{Jinja}} HTML CSS JS) - ((Views - URLs)View - (Models - database)Models) Server side
+
